@@ -1,29 +1,28 @@
 class Turn {
-  constructor (usersGuess, card){
+  constructor (usersGuess, card) {
     this.usersGuess = usersGuess;
     this.card = card;
   }
-  returnGuess (){
+  returnGuess () {
     return this.usersGuess;
   }
 
-  returnCard (){
+  returnCard () {
     return this.card;
   }
 
-  evaluateGuess (){
+  evaluateGuess () {
     return this.usersGuess === this.card.correctAnswer;
   }
 
-  giveFeedback (){
-    if (this.evaluateGuess() === true){
-      return 'Correct!';
+  giveFeedback () {
+    if (this.evaluateGuess() === true) {
+      return 'correct!';
     } else {
-      return 'Incorrect!';
+      return 'incorrect!';
     }
   }
 
-/* check if we need to use this for the method reference */
 }
 
 
